@@ -13,14 +13,7 @@ if [ ! -d "$1" ]; then
 fi
 
 # Define the input file and Python script paths
-INPUT_FILE="$1/input.txt"
 PYTHON_SCRIPT="$1/$(basename $1).py"
-
-# Check if the input file exists
-if [ ! -f "$INPUT_FILE" ]; then
-  echo "Input file not found!"
-  exit 1
-fi
 
 # Check if the Python script exists
 if [ ! -f "$PYTHON_SCRIPT" ]; then
@@ -32,7 +25,7 @@ fi
 source venv/Scripts/activate
 
 # Run the Python script with the input file
-python "$PYTHON_SCRIPT" "$INPUT_FILE"
+python "$PYTHON_SCRIPT"
 
 # Deactivate the Python virtual environment
 deactivate
