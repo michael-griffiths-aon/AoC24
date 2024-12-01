@@ -13,7 +13,7 @@ if [ ! -d "$1" ]; then
 fi
 
 # Define the input file and Python script paths
-INPUT_FILE="$1/inputs.txt"
+INPUT_FILE="$1/input.txt"
 PYTHON_SCRIPT="$1/$(basename $1).py"
 
 # Check if the input file exists
