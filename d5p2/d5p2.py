@@ -27,14 +27,14 @@ def check_rule(report, rule):
             if rule[0] in report[list(report).index(report[i]):]:
                 return True
 
-    return False#
+    return False
 
 
-def reorder_report(report, pertinent_rules):
+def reorder_report(report, rules):
     unchanged = False
     while unchanged == False:
         report_copy = report.copy()
-        for rule in pertinent_rules:
+        for rule in rules:
             if rule[0] in report_copy and rule[1] in report_copy:
                 index_0 = report_copy.index(rule[0])
                 index_1 = report_copy.index(rule[1])
