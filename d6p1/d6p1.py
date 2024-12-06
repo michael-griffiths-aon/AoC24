@@ -1,5 +1,3 @@
-import csv as csv
-
 def d6p1(input):
     move_guard(input)
     
@@ -20,6 +18,7 @@ def find_guard(input):
 def move_guard(input):
     length = len(input)
     width = len(input[0])
+    total = length * width
     check = False
     position = find_guard(input)
     while check == False:
