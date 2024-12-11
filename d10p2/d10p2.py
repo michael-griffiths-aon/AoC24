@@ -1,4 +1,4 @@
-with open('./d10p1/input.txt') as f:
+with open('./d10p2/input.txt') as f:
     data = f.read().split()
 
 processed_data = []
